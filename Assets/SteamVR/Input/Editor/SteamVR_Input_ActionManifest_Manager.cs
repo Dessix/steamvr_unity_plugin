@@ -46,7 +46,7 @@ namespace Valve.VR
 
             string folderName = "SteamVR_" + SteamVR_Input_ActionFile.GetCodeFriendlyName(name);
 
-            string directorySeparatorChar = System.IO.Path.DirectorySeparatorChar.ToString();
+            const string directorySeparatorChar = "/";
 
             string mainFolderPath = string.Format("{0}", folderName);
             string versionFolderPath = string.Format("{1}{0}{2}", directorySeparatorChar, folderName, version.ToString());
